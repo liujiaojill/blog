@@ -19,6 +19,11 @@ void f(int n){
 	printf("node(?)=%d\n",n);
 }
 int main(){
+
+	// bool b = false;
+	// b = true;
+	// b = "zifuchuan";
+
 	struct node * list = 0, *l;
 	int i;
 

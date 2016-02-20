@@ -25,25 +25,28 @@ fee=isMember ? "$2.00" : "$10.00";
 //var members;
 //var members=[1,2,3];
 members = members ? members : [ ];
-
 members = members || [];
 
-var result1 = "King" && "Arthur";
-console.log(result1);
+a1 = true  && true      // t && t returns true
+a2 = true  && false     // t && f returns false
+a3 = false && true      // f && t returns false
+a4 = false && (3 == 4)  // f && f returns false
+a5 = "Cat" && "Dog"     // t && t returns "Dog"
+a6 = false && "Cat"     // f && t returns false
+a7 = "Cat" && false     // t && f returns false
 
-var result2 = "Arthur" && "King";
-console.log(result2);
-
-var result1 = "King" || "Arthur"; 
-console.log(result1);
-
-var result2 = "Arthur" || "King"; 
-console.log(result2);
+o1 = true  || true       // t || t returns true
+o2 = false || true       // f || t returns true
+o3 = true  || false      // t || f returns true
+o4 = false || (3 == 4)   // f || f returns false
+o5 = "Cat" || "Dog"      // t || t returns "Cat"
+o6 = false || "Cat"      // f || t returns "Cat"
+o7 = "Cat" || false      // t || f returns "Cat"
 //////////////////////////////////////////////////
 var tall = true;
 var rich = true;
 var handsome = true;
-tall && rich && handsome && alert("可以泡美女");
+tall && rich && handsome && alert("可以学学写程序！");
 ///////////////////////////////////////////////////
 function rankProgrammer(rank){ 
     switch(rank){ 
