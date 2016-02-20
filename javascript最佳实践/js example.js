@@ -160,7 +160,7 @@ var list=document.getElementById('mylist'),
 for (var i = 0; i < members.length; i++) {
 	element=document.createElement('li');
 	element.appendChild(document.createTextNode(members[i]));
-	list.appendChild(element);
+	fragment.appendChild(element);
 };
 list.appendChild(fragment);
 
