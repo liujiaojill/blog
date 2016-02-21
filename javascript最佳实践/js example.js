@@ -200,6 +200,13 @@ var man = new Man("不高","不富","不帅");
 var woman = new Woman("不白","不富","不美");
 man.eat();//-->undefined要吃饭
 woman.eat();//-->Alice要吃饭
+function PlaseEat(p){
+    if(p instanceof People){
+        p.eat();
+    }else{
+    	console.log("没有继承People，所以不能屌用eat方法");
+    }
+}
 //-->true;因为Object.getPrototypeOf(man) === Man.prototype符合定义
 console.log(man instanceof Man);
 //-->true;People.prototype.isPrototypeOf(man)
