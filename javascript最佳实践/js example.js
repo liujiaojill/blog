@@ -312,10 +312,11 @@ workers.assignment("1   1","'");
 workers.assignment("1","';alert('xiaohu');'");
 
 function WorkersBetter(){
-	this.workers=[{task:""},{task:""},{task:""},{task:""}];
-	this.assignment=function assignment(who, task){
+	this.workers=[];
+	this.assignment=function assignment(name, task){
 		//TODO: 检查数组越界......
-		this.workers[who].task=task;
+		var obj ={name:name,task:task};
+		this.workers.push(obj);
 	}
 }
 var workersBetter = new WorkersBetter();
@@ -353,6 +354,7 @@ console.log(num.toFixed(1));
 parseFloat(0.335.toFixed(2)) + 2;
 parseFloat("2.333是xiaohu的零用钱");
 parseFloat("xiaohu的零用钱为2.333");
+
 
 function isNumber(data){
 	return ( typeof data === "number" 

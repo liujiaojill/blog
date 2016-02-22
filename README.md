@@ -6,6 +6,7 @@
 - [JS优化代码性能](https://github.com/benhaben/javascript-best-practice/issues/4)
 - [JS中的比较](https://github.com/benhaben/javascript-best-practice/issues/5)
 - [异常处理](https://github.com/benhaben/javascript-best-practice/issues/6)
+- [JS红色警戒](https://github.com/benhaben/javascript-best-practice/issues/7)
 
 #我的微信号
 ![](https://raw.githubusercontent.com/benhaben/javascript-best-practice/master/javascript%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/weixin.png)

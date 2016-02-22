@@ -73,3 +73,4 @@ console.log(xiaohu);
 ```
 上面这段程序显示出“高级”程序猿拥有所有的待遇，而初级程序员只有工资和假期。
 
+![我的微信号](http://images.cnblogs.com/cnblogs_com/xiaohu1986/789491/o_weixin.png)
