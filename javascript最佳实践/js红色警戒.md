@@ -186,3 +186,4 @@ function isNumber(data){
 }
 ```
 
+![我的微信号](http://images.cnblogs.com/cnblogs_com/xiaohu1986/789491/o_weixin.png)

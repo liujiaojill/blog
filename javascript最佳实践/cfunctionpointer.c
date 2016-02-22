@@ -19,7 +19,9 @@ void f(int n){
 	printf("node(?)=%d\n",n);
 }
 int main(){
-
+	func_t pf = f;
+	f(1);
+	
 	// bool b = false;
 	// b = true;
 	// b = "zifuchuan";

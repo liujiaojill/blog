@@ -1,19 +1,19 @@
-// var namespace1 = {
-// 	list : ['死亡骑士','巫妖','恐惧魔王'],
-// 	display : function display(){
-// 		var mylist = document.getElementById("mylist"), 
-// 	    fragment = document.createDocumentFragment(), 
-// 	    element; 
+var namespace1 = {
+	list : ['死亡骑士','巫妖','恐惧魔王'],
+	display : function display(){
+		var mylist = document.getElementById("mylist"), 
+	    fragment = document.createDocumentFragment(), 
+	    element; 
 
-// 		for(var i = 0, x = list.length; i<x; i++){ 
-// 		    element = document.createElement("li"); 
-// 		    element.appendChild( document.createTextNode( this.list[i]) ); 
-// 		    fragment.appendChild(element); 
-// 		}
+		for(var i = 0, x = list.length; i<x; i++){ 
+		    element = document.createElement("li"); 
+		    element.appendChild( document.createTextNode( this.list[i]) ); 
+		    fragment.appendChild(element); 
+		}
 
-// 		mylist.appendChild(fragment);
-// 	}
-// };
+		mylist.appendChild(fragment);
+	}
+};
 
 
 var globalVariable = "我是外层变量,从disply函数找到我需要很久很久";
