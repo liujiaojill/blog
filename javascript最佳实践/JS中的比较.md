@@ -101,3 +101,5 @@ var simpleStr = "This is a simple string";
 simpleStr instanceof String;
 ```
 居然返回false。JS的行为有时候还真奇怪。`var newStr    = new String("String created with constructor");`这样定义就可以返回`true`。感觉JS的语言细节方面不是特别的讲究啊。
+
+![我的微信号](http://images.cnblogs.com/cnblogs_com/xiaohu1986/789491/o_weixin.png)

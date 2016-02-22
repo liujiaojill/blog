@@ -192,3 +192,5 @@ var speed = new SpeedTest(LoopGood,null,10000);
 speed.startTest();
 ```
 使用起来也很方便吧。
+
+![我的微信号](http://images.cnblogs.com/cnblogs_com/xiaohu1986/789491/o_weixin.png)
