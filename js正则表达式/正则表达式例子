@@ -1,0 +1,50 @@
+/*****************************************************************/
+//手动判断邮政编码
+var postCode = '243100'
+
+function isValidPostCode( postCode ){
+	var isValid = true;
+	for (var i = 0; i < postCode.length; i++) {
+		if(postCode[i]>='0' && postCode[i]<='9'){
+			continue;
+		}else{
+			isValid = false;
+			break;
+		}
+	}
+	return isValid;
+}
+
+console.log(isValidPostCode(postCode)?"合法的":"不合法");
+
+//正则表达式判断
+'243100'.match(/^\d{6}$/)?"合法的":"不合法";
+
+/*****************************************************************/
+'shenyin'.match(/shenyin/); 
+'xiongzijun'.match(/shenyin|xiongzijun/); 
+'shenyin牛'.match(/shenyin牛+/); 
+/*****************************************************************/
+
+var str = 
+'【红色小鸟】（红火）\n【蓝色小鸟】（蓝冰）\n【黄色小鸟】（黄风）\n【黑色小鸟】（黑炮）\n【白色小鸟】（白弹）\n【绿色小鸟】（绿颜）\n【红色大鸟】（虹羽） \n【橙色小鸟】（气腾）\n【粉色小鸟】（粉黛）'
+
+str.match(/小鸟/);
+
+var myRegexp = /^【[\u4e00-\u9fa5]+】（[\u4e00-\u9fa5]+）[\u4e00-\u9fa50-9，。]+（[\u4e00-\u9fa5]+\d+\-\d+）$/gm;
+var match = myRegexp.exec(str);
+//And if there are multiple matches you can iterate over them:
+
+var str = 
+'【红色小鸟】（红火）体型小，重量轻，攻击弱，无特效，可在滚动时消灭绿猪。适合攻击玻璃与木头，攻击混凝土较弱。（关卡1-1）\n【蓝色小鸟】（蓝冰）体型极小，重量轻，攻击弱，可以变成3个。攻击玻璃较强，攻击木头与混凝土较弱。（关卡1-10）';
+str.match(/^(【[\u4e00-\u9fa5]+】)(（[\u4e00-\u9fa5]+）)([\u4e00-\u9fa50-9，。]+)（[\u4e00-\u9fa5]+(\d+\-\d+)）$/gm);
+str.split(/^(【[\u4e00-\u9fa5]+】)(（[\u4e00-\u9fa5]+）)([\u4e00-\u9fa50-9，。]+)（[\u4e00-\u9fa5]+(\d+\-\d+)）$/gm);
+str.replace(/^(【[\u4e00-\u9fa5]+】)(（[\u4e00-\u9fa5]+）)([\u4e00-\u9fa50-9，。]+)（[\u4e00-\u9fa5]+(\d+\-\d+)）$/gm, "$1的外号是$2,出现在关卡$4");
+
+match = myRegexp.exec(myString);
+while (match != null) {
+    // matched text: match[0]
+    // match start: match.index
+    // capturing group n: match[n]
+    match = myRegexp.exec(myString);
+}
