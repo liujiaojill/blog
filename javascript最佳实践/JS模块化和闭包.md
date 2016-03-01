@@ -305,4 +305,5 @@ var namespace1 = (function(gv){
 ```
 这个例子把globalVariable当成参数传入，这样他就在匿名function函数的作用域里面了。
 在看一个图，会更直观
-[嵌套作用域的查找](https://raw.githubusercontent.com/benhaben/javascript-best-practice/master/javascript%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/%E5%B5%8C%E5%A5%97%E4%BD%9C%E7%94%A8%E5%9F%9F.png)
+![嵌套作用域的查找](https://raw.githubusercontent.com/benhaben/javascript-best-practice/master/javascript%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/%E5%B5%8C%E5%A5%97%E4%BD%9C%E7%94%A8%E5%9F%9F.png)
+我们不希望解析器去一直往上查找，所以帮帮它喽。

@@ -1,4 +1,4 @@
-# switch语句的技巧
+# JavaScript中switch语句的技巧
 ## 概述
 switch语句对一个表达式求值，将结果与 case 子语句比较，如果匹配，则从 case 处的语句向下执行。
 
